@@ -1,0 +1,77 @@
+html
+    head
+        title Teams
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet")
+
+    body(class='p-3')
+        nav(class="navbar navbar-expand-lg bg-light") 
+            div(class="container-fluid") 
+                a(class="navbar-brand" href="/") CricHub
+                ul(class="navbar-nav me-auto mb-2 mb-lg-0") 
+                    li(class="nav-item") 
+                    a(class="nav-link active" href="/home") Home
+                    li(class="nav-item") 
+                    a(class="nav-link" href="/scoreboard") Scoreboard
+                    li(class="nav-item") 
+                    a(class="nav-link" href="/series") Series
+                    li(class="nav-item") 
+                    a(class="nav-link" href="/teams") Teams
+                form(class="d-flex" role="search" action="player") 
+                    input(class="form-control me-2" type="search" name="name" placeholder="Search Player" aria-label="Search") 
+                    button(class="btn btn-outline-success" type="submit") Search
+
+        div(class='m-5')
+            h1(class='text-center m-2' style='font-variant:small-caps') ICC T20 World Cup Final's Teams
+            div(class="row")
+                div(class="list-group col-6 border rounded")
+                    div(class="d-flex w-100 justify-content-center")
+                        h4(class="mb-1 text-center text-primary") PAKISTAN
+                    ul(class="list-group list-group-flush")
+                        li(class="list-group-item") 
+                            a(href="player?name=Babar Azam" class='text-dark') Babar Azam
+                        li(class="list-group-item") 
+                            a(href="player?name=Mohammad Rizwan" class='text-dark') Mohammad Rizwan
+                        li(class="list-group-item") 
+                            a(href="player?name=Shan Masood" class='text-dark') Shan Masood
+                        li(class="list-group-item") 
+                            a(href="player?name=Mohammad Haris" class='text-dark') Mohammad Haris
+                        li(class="list-group-item") 
+                            a(href="player?name=Iftikhar Ahmed" class='text-dark') Iftikhar Ahmed
+                        li(class="list-group-item") 
+                            a(href="player?name=Shadab Khan" class='text-dark') Shadab Khan
+                        li(class="list-group-item") 
+                            a(href="player?name=Mohammad Nawaz" class='text-dark') Mohammad Nawaz
+                        li(class="list-group-item") 
+                            a(href="player?name=Haris Rauf" class='text-dark') Haris Rauf
+                        li(class="list-group-item") 
+                            a(href="player?name=Mohammad Wasim" class='text-dark') Mohammad Wasim
+                        li(class="list-group-item") 
+                            a(href="player?name=Naseem Shah" class='text-dark') Naseem Shah
+                        li(class="list-group-item") 
+                            a(href="player?name=Shaheen Afridi" class='text-dark') Shaheen Afridi
+                div(class="list-group col-6 border rounded")
+                    div(class="d-flex w-100 justify-content-center")
+                        h4(class="mb-1 text-center text-primary") ENGLAND
+                    ul(class="list-group list-group-flush")
+                        li(class="list-group-item") 
+                            a(href="player?name=Alex Hales" class='text-dark') Alex Hales
+                        li(class="list-group-item") 
+                            a(href="player?name=Jos Butler" class='text-dark') Jos Butler
+                        li(class="list-group-item") 
+                            a(href="player?name=Phil Salt" class='text-dark') Phil Salt
+                        li(class="list-group-item") 
+                            a(href="player?name=Ben Stokes" class='text-dark') Ben Stokes
+                        li(class="list-group-item") 
+                            a(href="player?name=Harry Brook" class='text-dark') Harry Brook
+                        li(class="list-group-item") 
+                            a(href="player?name=Liam Livingstone" class='text-dark') Liam Livingstone
+                        li(class="list-group-item") 
+                            a(href="player?name=Moeen Ali" class='text-dark') Moeen Ali
+                        li(class="list-group-item") 
+                            a(href="player?name=Sam Curran" class='text-dark') Sam Curran
+                        li(class="list-group-item") 
+                            a(href="player?name=Chris Woakes" class='text-dark') Chris Woakes
+                        li(class="list-group-item") 
+                            a(href="player?name=Adil Rashid" class='text-dark') Adil Rashid
+                        li(class="list-group-item") 
+                            a(href="player?name=Mark Wood" class='text-dark') Mark Wood

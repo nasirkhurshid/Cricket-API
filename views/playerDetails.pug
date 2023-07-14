@@ -1,0 +1,47 @@
+html
+    head
+        title Details
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet")
+
+    body(class='p-3')
+        nav(class="navbar navbar-expand-lg bg-light") 
+            div(class="container-fluid") 
+                a(class="navbar-brand" href="/") CricHub
+                ul(class="navbar-nav me-auto mb-2 mb-lg-0") 
+                    li(class="nav-item") 
+                    a(class="nav-link active" href="/home") Home
+                    li(class="nav-item") 
+                    a(class="nav-link" href="/scoreboard") Scoreboard
+                    li(class="nav-item") 
+                    a(class="nav-link" href="/series") Series
+                    li(class="nav-item") 
+                    a(class="nav-link" href="/teams") Teams
+                form(class="d-flex" role="search" action="player") 
+                    input(class="form-control me-2" type="search" name="name" placeholder="Search Player" aria-label="Search") 
+                    button(class="btn btn-outline-success" type="submit") Search
+
+        div(class='m-5')
+            h1(class='text-center m-2' style='font-variant:small-caps') Player Details
+            div(class="row")
+                div(class="list-group col-12 border rounded")
+                    div(class="d-flex w-100 justify-content-start")
+                        h4(class="mb-1 ms-1 text-primary") #{player.name}
+                    ul(class="list-group list-group-flush")
+                        li(class="list-group-item")
+                            b Role:
+                            span #{player.role}
+                        li(class="list-group-item")
+                            b Batting Style:
+                            span #{player.battingStyle}
+                        li(class="list-group-item")
+                            b Bowling Style:
+                            span #{player.bowlingStyle}
+                        li(class="list-group-item")
+                            b Date Of Birth:
+                            span #{player.dateOfBirth}
+                        li(class="list-group-item")
+                            b Place Of Birth:
+                            span #{player.placeOfBirth}
+                        li(class="list-group-item")
+                            b Country:
+                            span #{player.country}
